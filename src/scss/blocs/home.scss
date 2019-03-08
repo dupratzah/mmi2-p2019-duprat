@@ -1,0 +1,46 @@
+.home{   
+    height: 100vh;  
+    width: 100vw;
+    background-image: url('./../img/jpeg/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position : center center; 
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  }
+.home__logo{
+    margin-top: 5vh;
+    @include movement3;
+    img{
+        height: 25vh;
+        width: auto;
+    }
+}
+.home__perso{
+    position: absolute;
+    top: 27vh;
+    left: 70vw;
+    @include movement1;
+    img{
+        height: 15vh;
+        width: auto;
+    }
+}
+.home__link{
+    margin-top: 5vh;    
+    img{
+        transition-duration:2s;
+        width: 100vw;
+    }
+    img:hover{
+        transform: rotate(180deg);
+    }
+}
+.home__text{
+    @include movement4(20%,0%);
+    img{
+        height:8vh ;
+    }
+}
+  

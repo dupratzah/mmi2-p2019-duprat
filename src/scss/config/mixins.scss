@@ -1,0 +1,44 @@
+@mixin movement1($min:0%,$max:15%) {
+    @keyframes bounce1{
+        0% {transform: translateY($min)}
+        50% {transform: translateY($max)}
+        100% {transform: translateY($min)}
+    }
+    animation-duration: 3s;
+    animation-name: bounce1;
+    animation-iteration-count: infinite;
+}
+@mixin movement2($min:0deg,$max:15deg){
+    @keyframes rotate1{
+        0%{ transform: rotate($min);}
+        50%{ transform: rotate($max);}
+        100%{ transform: rotate($min);}
+    }
+    animation-duration: 3s;
+    animation-name: rotate1;
+    animation-iteration-count: infinite;
+}
+@mixin movement3($min:-5deg,$max:5deg){
+    @keyframes rotate2{
+        0%{ transform: rotate(0deg);}
+        1%{transform: rotate($min);}
+        2%{transform: rotate($max);}
+        3%{transform: rotate($min);}
+        4%{ transform: rotate(0deg);}
+        100%{ transform: rotate(0deg);}
+    }
+    animation-duration: 6s;
+    animation-name: rotate2;
+    animation-iteration-count: infinite;
+}
+@mixin movement4($min:0%,$max:15%) {
+    @keyframes bounce2{
+        0% {transform: translateY($min)}
+        80%{transform: translateY($min)}
+        90% {transform: translateY($max)}
+        100% {transform: translateY($min)}
+    }
+    animation-duration: 2s;
+    animation-name: bounce2;
+    animation-iteration-count: infinite;
+}
