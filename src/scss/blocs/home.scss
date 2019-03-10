@@ -1,5 +1,5 @@
 .home{   
-    height: 100vh ;  
+    height: 100vh;  
     width: 100vw;
     background-image: url(./../img/jpeg/background.jpg);
     background-repeat: no-repeat;
@@ -7,30 +7,77 @@
     background-position : center center; 
     text-align: center;
     position: relative;
+    @include medium{
+        overflow: hidden;
+    }
+    @include large{
+        overflow: hidden;  
+    }
+
   }
 .home__logo{
-    margin-top: 10vh;
+    margin-top: 3vh;
     @include movement3;
+    @include large{
+        margin-top: 0%;
+        position: absolute;
+        left:5vw;   
+    }
     img{
-        height: 23vh;
+        height: 20vh;
         width: auto;
+        @include medium{
+            width: 45vw;
+            height: auto;
+        }
+        @include large{
+            width:25vw;
+            height: auto;
+            transform: translateY(-15%);
+        }
     }
 }
 .home__perso{
     position: absolute;
-    top: 20vh;
+    top: 18vh;
     left: 70vw;
-    @include movement1;
+    @include medium{
+        top: 15vh;
+        left: 80vw;
+    }
+    @include large{
+        top:7vh;
+        left:75vw;
+    }
+    @include movement1;    
     img{
         height: 12vh;
         width: auto;
+        @include medium{
+            width:14vw;
+            height: auto;
+        }    
+        @include large{
+            width: 10vw;
+            height: auto;
+        }
     }
 }
 .home__link{
-    margin-top: 5vh;    
+    margin-top: 5vh;
+    @include medium{
+        margin-top:0;
+        transform: translateY(-5%);
+    }
+    @include large{
+        margin-top: 10vh;
+    }   
     img{
         transition-duration:2s;
-        width: 80vw;
+        width: 90vw;
+        @include large{
+            width: 45vw;
+        }
     }
     img:hover{
         transform: rotate(180deg);
@@ -38,8 +85,15 @@
 }
 .home__text{
     @include movement4(20%,0%);
+    @include large{
+        display: none;
+    }
     img{
         height:6vh ;
+        @include medium{
+            transform: translateY(-100%);
+        }
+
     }
 }
   

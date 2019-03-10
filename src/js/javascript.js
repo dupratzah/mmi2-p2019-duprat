@@ -1,10 +1,15 @@
 /*LOADING TIME FOR LINK*/
 const btn = document.getElementById("btn");
+var largeur = window.innerWidth;
+console.log(largeur);
 btn.onclick = e => {
     event.preventDefault();
-    setTimeout(() => {
-        
+    if (largeur < 1280) {
+        setTimeout(() => {
         window.location = "./../main.html";
-
-    }, 2000);
+        }, 2000);
+    }
+    else{
+        window.location = "./../main.html";
+    }
 };

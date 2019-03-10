@@ -4,6 +4,7 @@
         50% {transform: translateY($max)}
         100% {transform: translateY($min)}
     }
+    transform-origin: center;
     animation-duration: 3s;
     animation-name: bounce1;
     animation-iteration-count: infinite;
@@ -14,19 +15,21 @@
         50%{ transform: rotate($max);}
         100%{ transform: rotate($min);}
     }
+    transform-origin: center;
     animation-duration: 3s;
     animation-name: rotate1;
     animation-iteration-count: infinite;
 }
 @mixin movement3($min:-5deg,$max:5deg){
     @keyframes rotate2{
-        0%{ transform: rotate(0deg);}
+        0%{transform: rotate(0deg);}
         1%{transform: rotate($min);}
         2%{transform: rotate($max);}
         3%{transform: rotate($min);}
         4%{ transform: rotate(0deg);}
         100%{ transform: rotate(0deg);}
     }
+    transform-origin: center;
     animation-duration: 6s;
     animation-name: rotate2;
     animation-iteration-count: infinite;
@@ -38,6 +41,7 @@
         90% {transform: translateY($max)}
         100% {transform: translateY($min)}
     }
+    transform-origin: center;
     animation-duration: 2s;
     animation-name: bounce2;
     animation-iteration-count: infinite;
