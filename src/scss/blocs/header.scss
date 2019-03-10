@@ -1,3 +1,42 @@
 .header{
-    background-color: black;
+    background: $degrade_grey;
+    height: 6vh;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+}
+.headers{
+    width: 33vw;
+    display: flex;
+    margin-top: 1vh;
+
+}
+.headers--right{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.headers__round{
+    border-radius: 50%;
+    background-color:$white;
+    height: 4vh;
+    width: 4vh;   
+    i{
+        color:$grey;
+        font-size: 1.1em;
+    }
+    &:hover{
+        transform: scale(1.2, 1.2);
+        i{
+            color:$grey_bis;
+        }
+    }
+}
+.headers__round--red{
+    background-color: $red;
+}
+.headers__round--yellow{
+    background-color: $yellow;
+}
+.headers__round--green{
+    background-color: $green;
 }
