@@ -9,10 +9,10 @@
     position: relative;
     overflow-x: hidden;
     @include medium{
-        overflow: hidden;
+        overflow-y: hidden;
     }
     @include large{
-        overflow: hidden;  
+        overflow-y: hidden;  
     }
 
   }

@@ -1,8 +1,10 @@
 .main__body{
+    position: relative;
+    height: 800vh;
     background-image: url(./../img/jpeg/background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;    
     background-position : center center; 
     padding-top: 6vh;
-    position: relative;
+    overflow-x: hidden;
 }
