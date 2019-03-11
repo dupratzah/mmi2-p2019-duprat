@@ -3,26 +3,64 @@
     height: 6vh;
     display: flex;
     position: fixed;
+    top: 0px;
+    left: 0px;
     width: 100vw;
 }
 .headers{
     width: 33vw;
     display: flex;
     margin-top: 1vh;
-
+    text-align: center; 
+}
+.headers--left{
+    a{
+        margin-left: 3vw;
+ 
+    }
+}
+.headers--title{
+    font-family: arcadeClassic, sans-serif;
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 180%;
+    @include medium{
+        font-size: 3em;
+    }
+    @include large{
+        font-size: 2em;
+    }
 }
 .headers--right{
     flex-direction: row;
     justify-content: flex-end;
+    a{
+        margin-left: 1vw;      
+
+    }       
+    @include large
+        {
+            margin-right: 3vw;
+        }
 }
 .headers__round{
     border-radius: 50%;
     background-color:$white;
     height: 4vh;
-    width: 4vh;   
+    width: 4vh;     
+    display: table-cell;
+    vertical-align: middle;
     i{
         color:$grey;
         font-size: 1.1em;
+        @include medium{
+            font-size: 1.8em;
+        }
+        @include large{
+            font-size: 1.4em;
+        }
     }
     &:hover{
         transform: scale(1.2, 1.2);

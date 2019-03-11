@@ -10,6 +10,8 @@ btn.onclick = e => {
         }, 2000);
     }
     else{
+        setTimeout(() => {
         window.location = "./../main.html";
+        }, 1500);
     }
 };
