@@ -1,10 +1,15 @@
 @font-face
 {
-    font-family: arcadeClassic;
-    src:url('./../fonts/arcadeclassic.TTF') format('ttf');
+    font-family: "arcadeClassic";
+    src:url('./../fonts/arcadeclassic.TTF') format('TrueType');
 }
 @font-face
 {
-    font-family: miracle;
-    src: url('./../fonts/miracle.otf') format('otf');
+    font-family: "miracle";
+    src: url('./../fonts/miracle.otf') format('TrueType');
+}
+@font-face
+{
+    font-family: "kids";
+    src: url('./../fonts/Kid_Font_.ttf') format('TrueType');
 }

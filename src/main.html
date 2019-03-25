@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
     <title>Nos pizzas</title>
     <link rel="icon" href="img/ico/pizza.ico" />
     <link rel="stylesheet" href="scss/style.scss">
+    <script defer type="text/javascript" src="./js/javascript.js"></script>
 </head>
 <body class="main__body">
     <header class="header">
@@ -39,28 +41,90 @@
             </a>
         </div>
     </header>
-    <div class="articles" id="articles">
-        <article class="article">
-            <img src="img/svg/mexico.svg" alt="La mexico" class="article__title">
-            <img src="img/png/pizza1.png" alt="image de la pizza mexico" class="article__img">
-            <p class="article__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptate ullam quos id suscipit. Rerum repudiandae debitis, praesentium corporis eius error repellat sed modi perspiciatis recusandae laboriosam molestias earum ab.</p>
-        </article>
-        <article class="article">
-            <img src="img/svg/mexico.svg" alt="La charognarde" class="article__title">
-            <img src="img/png/pizza2.png" alt="image de la pizza charognarde" class="article__img">
-            <p class="article__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptate ullam quos id suscipit. Rerum repudiandae debitis, praesentium corporis eius error repellat sed modi perspiciatis recusandae laboriosam molestias earum ab.</p>
-        </article>
-        <article class="article">
-            <img src="img/svg/mexico.svg" alt="La laitière" class="article__title">
-            <img src="img/png/pizza3.png" alt="image de la pizza laitière" class="article__img">
-            <p class="article__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptate ullam quos id suscipit. Rerum repudiandae debitis, praesentium corporis eius error repellat sed modi perspiciatis recusandae laboriosam molestias earum ab.</p>
-        </article>
+    <div class="stars">
+        <img class="star" data-rellax-speed="-6" src="img/png/background1.png" alt="stars">
+        <img class="star" data-rellax-speed="-4" src="img/png/background2.png" alt="stars">
     </div>
-    <div id="store">
+    <div class="content">
+        <button type="button" class="quit"><i class="fas fa-times"></i></button>
+        <h3>Les tailles de pizza :</h3>
+            <li class="pizza__taille grande">
+                <i class="fas fa-pizza-slice"></i>
+                <p>55€</p>
+            </li>
+            <li class="pizza__taille moyenne">
+                <i class="fas fa-pizza-slice"></i>
+                <p>45€</p>
+            </li>
+            <li class="pizza__taille petite">
+                <i class="fas fa-pizza-slice"></i>
+                <p>40€</p>
+            </li>
+    </div>  
+    <div class="achat">
+        <button type="button" class="quit"><i class="fas fa-times"></i></button>
+        <h2>Pizza achetee !</h2>
+    </div>
+    <div class="articles" id="articles">
+        <h2>LES PIZZAS</h2>
+        <article class="article">
+            <h3>La pizza Mexico</h3>
+            <img class="article__img" src="img/png/pizza1.png" alt="image de la pizza mexico" >
+            <p class="article__p">Si tu veux rire un bon coup, mange pas cette pizza. Elle te fera passer un sale moment, ca pique, ca pique et puis c'est diarhée assurée ce genre de bouffe. Donc si t'es pas un vrai mexicos avec ta moustache et tes bretelles passe le chemin. On t'aura averti chico.</p>
+            <div class="button">            
+                <button type="button" class="button__taille btn">Voir les tailles </button>
+                <button type="button" class="button__valide btn2">Acheter la pizza </button>
+            </div>     
+        </article>
 
+        <article class="article">
+            <h3>La pizza Charognarde</h3>
+            <img class="article__img--modifier" src="img/png/pizza2.png" alt="image de la pizza charognarde">
+            <p class="article__p--modifier">Même les pire charognes ne mangeraient pas une miette de cet immondice. On à récolté le plus de déchets possible dans les poubelles du quartier et on a versé le merdier dans ton assiette. Ca c'est pour les vrais bonhommes qui ont de la gueule, et chez qui ca se sent.</p>
+            <div class="button">            
+                    <button type="button" class="button__taille btn">Voir les tailles </button>
+                    <button type="button" class="button__valide btn2">Acheter la pizza </button>
+            </div>  
+        </article>
+        <article class="article">
+            <h3>La pizza Laitière</h3>
+            <img class="article__img" src="img/png/pizza3.png" alt="image de la pizza laitière" >
+            <p class="article__p">Si tu croyais te farcir une laitière comme dans la peinture, pas la peine de te faire un tableau, c'est pas du tout ça. Celle-ci elle est comme le Red-bull, faite à la pisse de veau, ca surexcite. Interdit de conduire après ça, a part si t'as joué dans Fast and Furious. </p>
+            <div class="button">            
+                    <button type="button" class="button__taille btn">Voir les tailles </button>
+                    <button type="button" class="button__valide btn2">Acheter la pizza </button>
+            </div>  
+        </article>
+        <article class="article">
+            <h3>La pizza Végetarienne</h3>
+            <img class="article__img--modifier" src="img/png/pizza4.png" alt="image de la pizza vegetarienne" >
+            <p class="article__p--modifier">Si tu croyais te farcir une laitière comme dans la peinture, pas la peine de te faire un tableau, c'est pas du tout ça. Celle-ci elle est comme le Red-bull, faite à la pisse de veau, ca surexcite. Interdit de conduire après ça, a part si t'as joué dans Fast and Furious. </p>
+            <div class="button">            
+                    <button type="button" class="button__taille btn">Voir les tailles </button>
+                    <button type="button" class="button__valide btn2">Acheter la pizza </button>
+                </div>  
+        </article>
+
+    </div>
+    <div id="store" id="store">
+        <h2>Le magasin :</h2>
+        <article class="store__article">
+            <div id="slider">
+                <figure>
+                    <img src="#" alt>
+                    <img src="#" alt>
+                    <img src="#" alt>
+                    <img src="#" alt>
+                    <img src="#" alt>
+                </figure>
+            </div>    
+        </article>
     </div>
     <div id="contact">
         
     </div>
+
+
+
 </body>
 </html>

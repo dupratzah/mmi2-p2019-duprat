@@ -6,6 +6,7 @@
     top: 0px;
     left: 0px;
     width: 100vw;
+    z-index: 20;
 }
 .headers{
     width: 33vw;
@@ -20,7 +21,7 @@
     }
 }
 .headers--title{
-    font-family: arcadeClassic, sans-serif;
+    font-family: "arcadeClassic", sans-serif;
     color: white;
     text-align: center;
     display: table-cell;
