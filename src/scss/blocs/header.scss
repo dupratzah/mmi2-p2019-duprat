@@ -29,6 +29,9 @@
     font-size: 180%;
     @include medium{
         font-size: 3em;
+        @include landscape{
+            font-size: 2em;
+        }
     }
     @include large{
         font-size: 2em;
@@ -58,6 +61,9 @@
         font-size: 1.1em;
         @include medium{
             font-size: 1.8em;
+            @include landscape{
+                font-size: 1.4em;
+            }
         }
         @include large{
             font-size: 1.4em;

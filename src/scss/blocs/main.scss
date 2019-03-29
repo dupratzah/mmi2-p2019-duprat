@@ -4,6 +4,10 @@
     background: -webkit-linear-gradient(top, #011e60 0%,#010638 50%,#02010f 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #011e60 0%,#010638 50%,#02010f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
 }
 h2{
     color:$yellow;
@@ -12,6 +16,9 @@ h2{
     margin-bottom: 2vh;
     font-weight: bolder;
     font-family: "kids", cursive;
+    @include medium{
+        font-size: 4.5em;
+    }
 }  
 h3{
     font-family: "miracle",cursive;
@@ -19,10 +26,41 @@ h3{
     font-size: 1.4em;
     margin-top: 3vh;
     margin-bottom: 2vh;
+    @include medium{
+        font-size: 2.1em;
+    }
+}
+h4{
+    color:$green;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 4vh;
+    font-weight: bolder;
+    font-family: "miracle", cursive;
 }
 p{
     font-family: 'Oswald', sans-serif;    
     color: white;
     font-size: 1em;
     margin-top: 5%;
+    @include medium{
+        font-size: 1.8em;
+        @include landscape{
+            font-size: 1.4em;
+        }
+    }
+    @include large{
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+}
+button{
+    font-size: 1.2em;
+    color: white;
+    @include medium{
+        font-size: 1.8em;
+    }
+    @include large{
+        font-size: 1.6em;
+    }
 }

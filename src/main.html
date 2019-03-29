@@ -41,10 +41,6 @@
             </a>
         </div>
     </header>
-    <div class="stars">
-        <img class="star" data-rellax-speed="-6" src="img/png/background1.png" alt="stars">
-        <img class="star" data-rellax-speed="-4" src="img/png/background2.png" alt="stars">
-    </div>
     <div class="content">
         <button type="button" class="quit"><i class="fas fa-times"></i></button>
         <h3>Les tailles de pizza :</h3>
@@ -67,63 +63,123 @@
     </div>
     <div class="articles" id="articles">
         <h2>LES PIZZAS</h2>
-        <article class="article">
-            <h3>La pizza Mexico</h3>
-            <img class="article__img" src="img/png/pizza1.png" alt="image de la pizza mexico" >
-            <p class="article__p">Si tu veux rire un bon coup, mange pas cette pizza. Elle te fera passer un sale moment, ca pique, ca pique et puis c'est diarhée assurée ce genre de bouffe. Donc si t'es pas un vrai mexicos avec ta moustache et tes bretelles passe le chemin. On t'aura averti chico.</p>
-            <div class="button">            
-                <button type="button" class="button__taille btn">Voir les tailles </button>
-                <button type="button" class="button__valide btn2">Acheter la pizza </button>
-            </div>     
-        </article>
+        <div class="articles__div">
+            <article class="article">
+                <h3>La pizza Mexico</h3>
+                <img class="article__img" src="img/png/pizza1.png" alt="image de la pizza mexico" srcset="img/png/pizza1_300.png 300w, img/png/pizza1_450.png 450w, img/png/pizza1.png 850w">
+                <p class="article__p">Si tu veux rire un bon coup, mange pas cette pizza. Elle te fera passer un sale moment, ca pique, ca pique et puis c'est diarhée assurée ce genre de bouffe. Donc si t'es pas un vrai mexicos avec ta moustache et tes bretelles passe le chemin. On t'aura averti chico.</p>
+                <div class="button">            
+                    <button type="button" class="button__taille btn">Voir les tailles </button>
+                    <button type="button" class="button__valide btn2">Acheter la pizza </button>
+                </div>     
+            </article>
 
-        <article class="article">
-            <h3>La pizza Charognarde</h3>
-            <img class="article__img--modifier" src="img/png/pizza2.png" alt="image de la pizza charognarde">
-            <p class="article__p--modifier">Même les pire charognes ne mangeraient pas une miette de cet immondice. On à récolté le plus de déchets possible dans les poubelles du quartier et on a versé le merdier dans ton assiette. Ca c'est pour les vrais bonhommes qui ont de la gueule, et chez qui ca se sent.</p>
-            <div class="button">            
-                    <button type="button" class="button__taille btn">Voir les tailles </button>
-                    <button type="button" class="button__valide btn2">Acheter la pizza </button>
-            </div>  
-        </article>
-        <article class="article">
-            <h3>La pizza Laitière</h3>
-            <img class="article__img" src="img/png/pizza3.png" alt="image de la pizza laitière" >
-            <p class="article__p">Si tu croyais te farcir une laitière comme dans la peinture, pas la peine de te faire un tableau, c'est pas du tout ça. Celle-ci elle est comme le Red-bull, faite à la pisse de veau, ca surexcite. Interdit de conduire après ça, a part si t'as joué dans Fast and Furious. </p>
-            <div class="button">            
-                    <button type="button" class="button__taille btn">Voir les tailles </button>
-                    <button type="button" class="button__valide btn2">Acheter la pizza </button>
-            </div>  
-        </article>
-        <article class="article">
-            <h3>La pizza Végetarienne</h3>
-            <img class="article__img--modifier" src="img/png/pizza4.png" alt="image de la pizza vegetarienne" >
-            <p class="article__p--modifier">Si tu croyais te farcir une laitière comme dans la peinture, pas la peine de te faire un tableau, c'est pas du tout ça. Celle-ci elle est comme le Red-bull, faite à la pisse de veau, ca surexcite. Interdit de conduire après ça, a part si t'as joué dans Fast and Furious. </p>
-            <div class="button">            
-                    <button type="button" class="button__taille btn">Voir les tailles </button>
-                    <button type="button" class="button__valide btn2">Acheter la pizza </button>
+            <article class="article">
+                <h3>La pizza Charognarde</h3>
+                <img class="article__img--modifier" src="img/png/pizza2.png" alt="image de la pizza charognarde" srcset="img/png/pizza2_300.png 300w, img/png/pizza2_450.png 450w, img/png/pizza2.png 850w">
+                <p class="article__p--modifier">Même les pire charognes ne mangeraient pas une miette de cet immondice. On à récolté le plus de déchets possible dans les poubelles du quartier et on a versé le merdier dans ton assiette. Ca c'est pour les vrais bonhommes qui ont de la gueule, et chez qui ca se sent.</p>
+                <div class="button">            
+                        <button type="button" class="button__taille btn">Voir les tailles </button>
+                        <button type="button" class="button__valide btn2">Acheter la pizza </button>
                 </div>  
-        </article>
+            </article>
+            <article class="article">
+                <h3>La pizza Laitière</h3>
+                <img class="article__img" src="img/png/pizza3.png" alt="image de la pizza laitière" srcset="img/png/pizza3_300.png 300w, img/png/pizza3_450.png 450w, img/png/pizza3.png 850w">
+                <p class="article__p">Si tu croyais te farcir une laitière comme dans la peinture, pas la peine de te faire un tableau, c'est pas du tout ça. Celle-ci elle est comme le Red-bull, faite à la pisse de veau, ca surexcite. Interdit de conduire après ça, a part si t'as joué dans Fast and Furious. </p>
+                <div class="button">            
+                        <button type="button" class="button__taille btn">Voir les tailles </button>
+                        <button type="button" class="button__valide btn2">Acheter la pizza </button>
+                </div>  
+            </article>
+            <article class="article">
+                <h3>La pizza Végetarienne</h3>
+                <img class="article__img--modifier" src="img/png/pizza4.png" alt="image de la pizza vegetarienne" srcset="img/png/pizza4_300.png 300w, img/png/pizza4_450.png 450w, img/png/pizza4.png 850w">
+                <p class="article__p--modifier">Les légumes ça c'est vraiment un truc qui claque un max. Dommage que ça n'existe plus... Du coup, on les a remplacé par des déchets radioactifs ! C'est exactement pareil : ils ont aussi étés cultivés sous terre. Au moins un truc garanti pour les vrais bonhommes. </p>
+                <div class="button">            
+                        <button type="button" class="button__taille btn">Voir les tailles </button>
+                        <button type="button" class="button__valide btn2">Acheter la pizza </button>
+                    </div>  
+            </article>
+        </div>
 
     </div>
-    <div id="store" id="store">
+    <div id="store" class="store">
         <h2>Le magasin :</h2>
         <article class="store__article">
-            <div id="slider">
-                <figure>
-                    <img src="#" alt>
-                    <img src="#" alt>
-                    <img src="#" alt>
-                    <img src="#" alt>
-                    <img src="#" alt>
-                </figure>
-            </div>    
+            <p class="store__p">Située à proximité de la troisième sortie de l'A 68 - Milky way : direction Vega du centaur, la pizzeria "Pizz'astronaute" saura réveiller vos papilles avec des goûts plus originaux les uns que les autres ! Re-découvrez les saveurs terriennes d'avant l'ère de la thérmo-nucléo destruction de la planète bleue.</p>
+            <div class="store__div">
+                <div class="slider">
+                    <figure>
+                        <img srcset="img/jpeg/astronaut_640.jpg 640w,
+                        img/jpeg/astronaut_1280.jpg 1280w,
+                        img/jpeg/astronaut_1920.jpg 1980w" 
+                        alt="astronaut" class="store__img">                    
+                        <img srcset="img/jpeg/pizza_640.jpg 640w,
+                        img/jpeg/pizza_1280.jpg 1280w,
+                        img/jpeg/pizza_1920.jpg 1980w" 
+                        alt="pizza" class="store__img">
+                        <img srcset="img/jpeg/galaxy_640.jpg 640w,
+                        img/jpeg/galaxy_1280.jpg 1280w,
+                        img/jpeg/galaxy_1920.jpg 1980w" 
+                        alt="galaxy" class="store__img">                    
+                        <img srcset="img/jpeg/pizza-1_640.jpg 640w,
+                        img/jpeg/pizza-1_1280.jpg 1280w,
+                        img/jpeg/pizza-1_1920.jpg 1980w" 
+                        alt="pizza-1" class="store__img">
+                        <img srcset="img/jpeg/milky-way_640.jpg 640w,
+                        img/jpeg/milky-way_1280.jpg 1280w,
+                        img/jpeg/milky-way_1920.jpg 1980w" 
+                        alt="milky-way" class="store__img">
+                    </figure>
+                </div>
+                <div class="mapouter">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.444402011177!2d-115.80403188463482!3d37.23716227986077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b81b2867dba963%3A0xe74288a24cbdf4c9!2sHomey+Airport!5e0!3m2!1sfr!2sfr!4v1553895451911!5m2!1sfr!2sfr" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </div>                
+            <h4>Ouvert 7j/7 et 24h/24 !</h4>
+            <p class="store__p--modifier">N'hésitez pas a venir nous rendre visite ! La plupart de nos employés étant des robots, nous sommes ouverts 7j/7 et 24h/24 !</p>
         </article>
     </div>
-    <div id="contact">
-        
+    <div id="contact" class="contacts">
+        <h2>Contact : </h2>
+        <article class="contact">
+            <h3>Donnez-nous votre avis !</h3>
+            <div class="contact__div">
+                <form class="contact__form" >
+                    
+                    <label>Nom :</label>
+                    <input type="text" name="firstname" placeholder="Ton nom de famille ...">
+                
+                    <label>Prénom :</label>
+                    <input type="text" name="lastname" placeholder="Ton prénom ...">
+                
+                    <label>Planète :</label>
+                    <select >
+                        <option>Venus</option>
+                        <option>Mars</option>
+                        <option>Station spatiale internationale</option>
+                    </select>
+                
+                    <label>Message : </label>
+                    <textarea  name="subject" placeholder="Votre requête..." style="height:200px"></textarea>
+                
+                    <button type="submit">Envoyer</button>
+                
+                </form>
+            </div> 
+            <div class="contact__links">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-tripadvisor"></i></a>
+            </div>
+        </article>
     </div>
-
+    <footer class="footer">
+        <p class="footer__p">tous droits réservés - duprat hugo</p>
+        <a class="footer__a" href="#"><i class="fas fa-home"></i></a>
+    </footer>
 
 
 </body>

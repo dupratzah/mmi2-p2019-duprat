@@ -1,6 +1,3 @@
-import Rellax from "rellax";
-console.log(Rellax);
-
 let btn = document.getElementsByClassName('btn');
 let btn2 = document.getElementsByClassName('btn2')
 let quit = document.getElementsByClassName('quit');
@@ -8,11 +5,6 @@ let choose = document.getElementsByTagName('li');
 const display = document.getElementsByClassName('content')[0];
 const achat = document.getElementsByClassName('achat')[0];
 init();
-
-/*PARRALLAX*/
-var rellax = new Rellax('.star', {
-    center: true
-});
 
 for (let index = 0; index < btn.length; index++) {
     btn[index].onclick = e =>{

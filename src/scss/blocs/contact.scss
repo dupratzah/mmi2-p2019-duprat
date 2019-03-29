@@ -1,0 +1,66 @@
+.contacts{
+    padding-top: 8vh;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    h3{
+        margin: 0;
+    }
+}
+.contact__form{
+    margin-top:5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    @include large{
+        width: 50vw;
+    }  
+    label{
+        margin-bottom: 4px;
+        margin-top: 4px;
+    }
+    input{
+        border-radius: 10px;
+    }
+    textarea{
+        border-radius: 10px;
+    }
+    button{
+        margin-top: 10px;
+        border-radius: 10px;
+        font-weight: bolder;
+        font-family: "kids", cursive;
+        background-color:darkgreen ;
+        border:none;
+        &:hover{
+            background-color:green;
+           
+            border: 2px solid darkgreen;
+        }
+        &:active{
+            transform: scale(1.05,1.05);
+        }
+    }
+}
+.contact__links{
+    margin-top: 2vh;
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    padding-bottom: 8vh;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 2em;
+        @include medium{
+            font-size: 4em;
+        }
+    }
+
+}

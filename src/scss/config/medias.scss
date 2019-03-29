@@ -3,8 +3,18 @@
       @content;
     }
   }
-  @mixin large {
+@mixin large {
     @media (min-width: 1280px) {
       @content;
     }
   }
+@mixin portrait{
+    @media screen and (orientation: portrait) {
+        @content;
+  }
+}
+@mixin landscape{
+    @media screen and (orientation: landscape) {
+        @content;
+  }
+}

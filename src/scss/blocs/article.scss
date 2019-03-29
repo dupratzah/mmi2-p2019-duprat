@@ -1,12 +1,28 @@
-.article{
-    text-align: center;    
-    margin-bottom: 5vh;
-}
 .articles{  
     padding-top: 8vh;   
     width: 90vw; 
-    transform: translateX(4%);
-    padding-bottom: 15vh;
+    padding-bottom: 5vh;
+}
+.articles__div{
+    @include medium{
+        @include landscape{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
+.article{
+    text-align: center;    
+    margin-bottom: 5vh;
+    @include medium{
+        @include landscape{
+            width: 45vw;
+        }
+    }
+    @include large{
+        width: 20vw;
+    }
 }
 .article__title{
     width: 75vw;
@@ -22,12 +38,22 @@
     float: right;
     shape-outside: circle(50%);
     height: 25vh;
+    @include medium{
+        @include landscape{
+            float: left;
+        }
+    }
 }
 .article__p{
     text-align: start;
 }
 .article__p--modifier{
     text-align:end;
+    @include medium{
+        @include landscape{
+            text-align: start;
+        }
+    }
 }
 .button{
     margin-top: 6vh;
@@ -40,15 +66,32 @@
         border-radius: 10px;
         font-weight: bolder;
         font-family: "kids", cursive;
-        font-size: 1.2em;
-        color: white;
+        @include medium{
+            width: 180px;
+            height: 80px;
+            @include landscape{
+                width: 160px;
+                height: 60px;
+                margin: 5px;
+            }
+        }
     }
 }
 .button__taille{
     background-color: darkred;
     border:none;
+    &:hover{
+        background-color:red;
+        transform: scale(1.05,1.05);
+        border: 2px solid darkred;
+    }
 }
 .button__valide{
     background-color:darkgreen ;
     border:none;
+    &:hover{
+        background-color:green;
+        transform: scale(1.05,1.05);
+        border: 2px solid darkgreen;
+    }
 }
